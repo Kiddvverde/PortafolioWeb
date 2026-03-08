@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.bg-pattern {
+    background-image: url('/bgpattern.png');
+    background-repeat: repeat;
+    animation: movePattern 10s linear infinite;
+}
+
+@keyframes movePattern {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100px 100px;
+    }
+}
