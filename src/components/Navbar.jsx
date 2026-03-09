@@ -1,8 +1,10 @@
 function Navbar() {
     return(
-        <nav className="flex justify-between px-4 py-3 border-b-5 border-zinc-800">
-            <button className="text-white bg-neutral-primary border-green-600">ES</button>
-            <button className="text-black bg-white">Modo nocturno</button>
+        <nav className="flex justify-center gap-4 px-4 py-3 border-b-5 border-zinc-800">
+            <button className="text-white bg-black border-5 border-zinc-800 w-32 font-pixel">Inicio</button>
+            <button className="text-white bg-black border-5 border-zinc-800 w-32 font-pixel">Experiencia</button>
+            <button className="text-white bg-black border-5 border-zinc-800 w-32 font-pixel">Proyectos</button>
+            <button className="text-white bg-black border-5 border-zinc-800 w-32 font-pixel">Tech Stack</button>
         </nav>
     )
 }

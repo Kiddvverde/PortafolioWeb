@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+    --font-pixel: "VT323", serif;
+}
+
 .bg-pattern {
     background-image: url('/bgpattern.png');
     background-repeat: repeat;
-    animation: movePattern 10s linear infinite;
+    animation: movePattern 5s linear infinite;
 }
 
 @keyframes movePattern {
@@ -11,6 +15,6 @@
         background-position: 0 0;
     }
     to {
-        background-position: 100px 100px;
+        background-position: 32px 32px;
     }
 }
