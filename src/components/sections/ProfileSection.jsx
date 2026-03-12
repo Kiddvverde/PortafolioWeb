@@ -1,8 +1,8 @@
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa"
 
-function ProfileCard() {
+function ProfileSection() {
     return (
-        <div className="flex items-start w-max-xl h-max bg-black border-5 border-dashed border-zinc-800 mx-auto mt-6 ml-2 mr-2">
+        <section className="flex items-start w-max-xl h-max bg-black border-5 border-dashed border-zinc-800 mx-auto mt-2 ml-2 mr-2">
             <img className="w-60 h-50 m-4 object-cover border-5 border-zinc-800" src="/leomacbookcamera.jpeg" alt="Leonardo"/>
             <div className="flex flex-col m-3">
                 <h1 className="text-white font-pixel text-2xl">Leonardo Cruz</h1>
@@ -15,8 +15,8 @@ function ProfileCard() {
                     <a href="" target="_blank" className="w-max border-5 border-zinc-800 mt-2.5 p-3 cursor-pointer block"><FaLinkedin size={32} color="white"/></a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
-export default ProfileCard
+export default ProfileSection
