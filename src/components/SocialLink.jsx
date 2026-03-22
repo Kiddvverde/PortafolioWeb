@@ -1,0 +1,9 @@
+function SocialLink({href, className = "", children}) {
+    return(
+        <a href={href} className={`w-max retro-box mt-2.5 p-3 cursor-pointer block ${className}`}>
+            {children}
+        </a>
+    )
+}
+
+export default SocialLink

@@ -5,6 +5,20 @@
     --font-grotesk: "Space Grotesk", serif;
 }
 
+@layer utilities {
+
+    .retro-box {
+        @apply bg-black border-5 border-zinc-800;
+    }
+
+    .retro-box-dashed {
+        @apply bg-black border-5 border-dashed border-zinc-800;
+    }
+    .retro-text {
+        @apply text-white font-pixel;
+    }
+}
+
 .bg-pattern {
     background-image: url('/bgpattern.png');
     background-repeat: repeat;
