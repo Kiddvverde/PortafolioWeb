@@ -1,13 +1,12 @@
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa"
-import SocialLink from "../SocialLink"
-import { useState } from "react"
+import ImageButton from "../ImageButton"
+import SectionWrapper from "./SectionWrapper"
 
-function ProfileSection() {
-    const [openedCert, setOpenedCert] = useState();
+function ProfileSection({ setOpenedCert }) {
 
     return (
         <>
-            <section className="flex items-start w-max-xl h-max retro-box-dashed mx-auto mt-2 ml-2 mr-2">
+            <SectionWrapper >
                 <img className="w-60 h-50 m-4 object-cover border-5 border-zinc-800" src="/leomacbookcamera.jpeg" alt="Leonardo"/>
                 <div className="flex flex-col m-3">
                     <h1 className="retro-text text-2xl">Leonardo Cruz</h1>
@@ -16,21 +15,21 @@ function ProfileSection() {
                     <p className="retro-text">Based in Monterrey, México 🇲🇽</p>
                     <div className="flex flex-row gap-3">
 
-                        <SocialLink href={"https://github.com/kiddvverde"}>
+                        <ImageButton target="_blank" href={"https://github.com/kiddvverde"}>
                             <FaGithub size={32} color="white"/>
-                        </SocialLink>
+                        </ImageButton>
 
-                        <SocialLink href={"https://x.com/leokernel"}>
+                        <ImageButton target="_blank" href={"https://x.com/leokernel"}>
                             <FaTwitter size={32} color="white"/>
-                        </SocialLink>
+                        </ImageButton>
 
-                        <SocialLink href={""}>
+                        <ImageButton target="_blank" href={""}>
                             <FaLinkedin size={32} color="white"/>
-                        </SocialLink>
+                        </ImageButton>
 
                     </div>
                 </div>
-            </section>
+            </SectionWrapper>
 
             <div className="flex flex-row gap-2">
 
@@ -38,21 +37,21 @@ function ProfileSection() {
                     <h1 className="retro-text text-2xl center ml-3 mt-2">Certificates</h1>
 
                     <div className="flex flex-wrap gap-2">
-                        <SocialLink href={""} className="ml-3 mb-2">
-                            <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
-                        </SocialLink>
+                        <ImageButton className="ml-3 mb-2">
+                            <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" onClick={() => setOpenedCert("Python1")} />
+                        </ImageButton>
 
-                        <SocialLink href={""} className="ml-2 mb-2">
+                        <ImageButton className="ml-2 mb-2">
                             <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
-                        </SocialLink>
+                        </ImageButton>
 
-                        <SocialLink href={""} className="ml-2 mb-2">
+                        <ImageButton className="ml-2 mb-2">
                             <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
-                        </SocialLink>
+                        </ImageButton>
 
-                        <SocialLink href={""} className="ml-2 mb-2">
+                        <ImageButton className="ml-2 mb-2">
                             <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
-                        </SocialLink>
+                        </ImageButton>
                     </div>
 
                 </section>
