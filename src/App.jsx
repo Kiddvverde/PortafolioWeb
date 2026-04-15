@@ -11,20 +11,23 @@ import DetailModal from "./components/DetailModal";
 
 function App() {
   const [section, setSection] = useState("profile");
-  const [openedCert, setOpenedCert] = useState("a");
+  const [openedCert, setOpenedCert] = useState("");
 
   return (
     <>
       <div className="min-h-screen bg-pattern bg-black">
         <div className="max-w-2xl mx-auto retro-box min-h-screen shadow-xl/100">
-          <Navbar onSelectSection={setSection}/>
-          
+          <Navbar onSelectSection={setSection} />
+
           {section === "profile" && <ProfileSection setOpenedCert={setOpenedCert} />}
           {section === "projects" && <ProjectsSection />}
           {section === "techstack" && <TechStackSection />}
           {section === "experience" && <ExperienceSection />}
 
-          {openedCert === "Python1" && <DetailModal><h1 className="retro-text">holaaaaaaaaa</h1></DetailModal>}
+          {openedCert === "Python1" &&
+            <DetailModal description={"Muere puta"}>
+              <img src="/certs/python1.png" alt="Python Essentials 1 Badge" />
+            </DetailModal>}
         </div>
       </div>
     </>
