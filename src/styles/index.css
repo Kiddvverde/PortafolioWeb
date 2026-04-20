@@ -22,7 +22,7 @@
 .bg-pattern {
     background-image: url('/bgpattern.png');
     background-repeat: repeat;
-    animation: movePattern 5s linear infinite;
+    animation: movePattern 1s linear infinite;
 }
 
 @keyframes movePattern {

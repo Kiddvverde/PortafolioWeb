@@ -42,15 +42,23 @@ function ProfileSection({ setOpenedCert }) {
                         </ImageButton>
 
                         <ImageButton className="ml-2 mb-2">
-                            <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
+                            <img className="w-24 h-24" src="/badges/aws.png" alt="AWS Academy Graduate Badge" onClick={() => setOpenedCert("AWSTrained")} />
                         </ImageButton>
 
                         <ImageButton className="ml-2 mb-2">
-                            <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
+                            <img className="w-24 h-24" src="/badges/R_for_data_science.png" alt="R for Data Science" onClick={() => setOpenedCert("RDataScience")} />
                         </ImageButton>
 
                         <ImageButton className="ml-2 mb-2">
-                            <img className="w-24 h-24" src="/badges/python_essentials_1.png" alt="Python Essentials 1 Badge" />
+                            <img className="w-24 h-24" src="/badges/data_vis_with_r.png" alt="Data Visualization with R" onClick={() => setOpenedCert("DataR")} />
+                        </ImageButton>
+
+                        <ImageButton className="ml-2 mb-2">
+                            <img className="w-24 h-24" src="/badges/using_R_with_databases.png" alt="Using R with Databases" onClick={() => setOpenedCert("RDB")} />
+                        </ImageButton>
+
+                        <ImageButton className="ml-2 mb-2">
+                            <img className="w-24 h-24" src="/badges/redhat.png" alt="Red Hat" onClick={() => setOpenedCert("redhat")} />
                         </ImageButton>
                     </div>
 
